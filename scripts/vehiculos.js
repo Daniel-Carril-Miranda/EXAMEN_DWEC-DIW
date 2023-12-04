@@ -49,11 +49,11 @@ export class vehiculo {
   // Creo el método para mostrar datos
   mostrarDatos() {
     const datos = `
-    Marca: ${this.#marca}
-    Modelo: ${this.#modelo}
-    Color: ${this.color}
-    Anio: ${this.anio}
-    Cilindrada: ${this.cilindrada}
+    Marca: ${this.#marca} <br>
+    Modelo: ${this.#modelo} <br>
+    Color: ${this.color} <br>
+    Anio: ${this.anio} <br>
+    Cilindrada: ${this.cilindrada}CC <br>
     `
     imprimir(datos);
   }

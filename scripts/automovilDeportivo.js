@@ -21,4 +21,9 @@ export class autoDeportivo extends (vehiculo){
   activarModoDeportivo() {
     imprimir("El modo deportivo se ha activado");
   }
+//   Método para mostrar datos
+  mostrarDatos() {
+    super.mostrarDatos();
+    imprimir(`PotenciaMotor: ${this.#potenciaMotor}CV<br>`);
+  }
 }

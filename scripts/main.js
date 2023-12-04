@@ -12,14 +12,21 @@ export function imprimir(mensaje){
     document.querySelector("main").appendChild(document.createElement("div")).innerHTML += `<p>${mensaje}</p>`;
 }
 
-// Creo un objeto vehículo usando la clase
+// instancio un objeto vehículo usando la clase vehiculo
 const coche1 = new vehiculo("BMW", "CLK", "rojo", 1992, 2400);
-imprimir(`<u>Coche 1</u>`)
+imprimir(`<u>Coche Estandar</u>`)
 coche1.mostrarDatos();
 coche1.arrancar();
 coche1.acelerar(140); 
 coche1.frenar();
 
+// instancio un objeto automovilDeportivo
+const deportivo1 = new autoDeportivo("Ferrari", "Spider", "amarillo", 2000, 4000, 500);
+imprimir(`<u>Coche Deportivo</u>`)
+deportivo1.mostrarDatos();
+deportivo1.arrancar();
+deportivo1.acelerar(140); 
+deportivo1.frenar();
 
 
 
