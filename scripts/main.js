@@ -13,12 +13,27 @@ export function imprimir(mensaje){
 }
 
 // instancio un objeto vehículo usando la clase vehiculo
-const coche1 = new vehiculo("BMW", "CLK", "rojo", 1992, 2400);
+const coche1 = new vehiculo("BMW", "CLK", "Rojo", 1992, 2400);
 imprimir(`<u>Coche Estandar</u>`)
 coche1.mostrarDatos();
 coche1.arrancar();
 coche1.acelerar(140); 
 coche1.frenar();
+
+// Variable de tipo Objet de un objeto Moto:
+const vehiculoObject = {
+    Marca: "BMW",
+    Modelo: "CLK",
+    Color: "Rojo",
+    Anio: 1992,
+    Cilindrada: 2400
+}
+console.log(vehiculoObject);
+localStorage.clear(); /* Esto limpia por completo el localStorage */
+localStorage.setItem("vehiculo", JSON.stringify(vehiculoObject));
+// Recuperación de Datos del LocalStorage
+console.log(localStorage.getItem("vehiculo"));
+console.log(JSON.parse(localStorage.getItem("vehiculo"))); /* Es lo mismo que console.log(vehiculoObject); */
 
 // instancio un objeto automovilDeportivo
 const deportivo1 = new autoDeportivo("Ferrari", "Spider", "amarillo", 2000, 4000, 500);
@@ -27,6 +42,39 @@ deportivo1.mostrarDatos();
 deportivo1.arrancar();
 deportivo1.acelerar(140); 
 deportivo1.frenar();
+
+// ---------------------------------------------------
+
+// Genere variable tipo Object con POO
+const deportivoObject = {
+    Marca: deportivo1.marca,
+    Modelo: deportivo1.modelo,
+    Color: deportivo1.color,
+    Anio: deportivo1.anio,
+    Cilindrada: deportivo1.cilindrada,
+    Potencia: deportivo1.potencia
+}
+
+// Almacenar los datos en el LocalStorage mediante un bcle iterativo
+for (const key in deportivoObject){
+    if (deportivoObject.hasOwnProperty(key)){
+        localStorage.setItem(key, deportivoObject[key]);
+    }
+};
+
+localStorage.setItem("vehiculo2", JSON.stringify(deportivoObject));
+// Mostrar los datos en el LocalStorage
+console.log(deportivoObject);
+console.log(JSON.parse(localStorage.getItem("vehiculo2")));
+
+// Elimina el color del loalstorage
+localStorage.removeItem("color");
+console.log(JSON.parse(localStorage.getItem("anio")));
+// Eliminar del localStorage
+localStorage.removeItem("vehiculo"); //Esto borra la Key "vehiculo"
+
+
+
 
 
 
