@@ -58,8 +58,8 @@ export class vehiculo {
     imprimir(datos);
   }
     //   Método acelerar, arrancar y frenar
-    acelerar() {
-        const mensaje = `El vehiculo ha acelerado hasta 120km/h`
+    acelerar(velocidad) {
+        const mensaje = `El vehiculo ha acelerado hasta ${velocidad}km/h`
         imprimir(mensaje);
     }
     arrancar(){
