@@ -52,7 +52,7 @@ export class vehiculo {
     Marca: ${this.#marca} <br>
     Modelo: ${this.#modelo} <br>
     Color: ${this.color} <br>
-    Anio: ${this.anio} <br>
+    Año: ${this.anio} <br>
     Cilindrada: ${this.cilindrada}CC <br>
     `
     imprimir(datos);

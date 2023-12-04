@@ -1,19 +1,29 @@
+@font-face {
+    font-family: "agbalumo";
+    src: url("/assets/fonts/Agbalumo-Regular.ttf") format(truetype);
+}
 *{
     box-sizing: border-box;
 }
 body{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: agbalumo;
 }
 h1{
     letter-spacing: 2px; /* c)letter-spacing: deja separación entre letras */
-    margin: 10px;  /* c) Margenes: Controla al la distancia entre el contenido y su borde */
+    margin: 10px;  /* c) Margenes: Controla la distancia entre el contenido y su borde */
     text-align: center;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: aquamarine ;
+    width: 50vh;
 }
 footer{
     opacity: .6;

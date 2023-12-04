@@ -14,7 +14,7 @@ export function imprimir(mensaje){
 
 // instancio un objeto vehículo usando la clase vehiculo
 const coche1 = new vehiculo("BMW", "CLK", "Rojo", 1992, 2400);
-imprimir(`<u>Coche Estandar</u>`)
+imprimir(`<h2><u>Coche Estandar</u></h2>`)
 coche1.mostrarDatos();
 coche1.arrancar();
 coche1.acelerar(140); 
@@ -39,8 +39,8 @@ console.log(JSON.parse(localStorage.getItem("vehiculo"))); /* Es lo mismo que co
 // ---------------------------------------------------
 
 // instancio un objeto automovilDeportivo
-const deportivo1 = new autoDeportivo("Ferrari", "Spider", "amarillo", 2000, 4000, 500);
-imprimir(`<u>Coche Deportivo</u>`)
+const deportivo1 = new autoDeportivo("Ferrari", "Spider", "Amarillo", 2000, 4000, 500);
+imprimir(`<h2><u>Coche Deportivo</u></h2>`)
 deportivo1.mostrarDatos();
 deportivo1.arrancar();
 deportivo1.acelerar(140); 
