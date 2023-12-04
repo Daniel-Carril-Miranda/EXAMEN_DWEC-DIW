@@ -4,5 +4,6 @@
     box-sizing: border-box;
 }
 h1{
-    letter-spacing: 30px;
+    letter-spacing: 2px;
+    opacity: .6;
 }

@@ -1,3 +1,4 @@
+import { imprimir } from "./main.js"; /* Importo el método para imprimir y exporto la clase */
 export class vehiculo {
   // Hago las propiedades privadas:
   #marca;
