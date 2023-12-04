@@ -13,6 +13,12 @@ export function imprimir(mensaje){
 }
 
 // Creo un objeto vehículo usando la clase
+const coche1 = new vehiculo("BMW", "CLK", "rojo", 1992, 2400);
+imprimir(`<u>Coche 1</u>`)
+coche1.mostrarDatos();
+coche1.arrancar();
+coche1.acelerar(140); 
+coche1.frenar();
 
 
 

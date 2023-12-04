@@ -1,14 +1,24 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
+    
 }
 h1{
-    letter-spacing: 2px;
+    letter-spacing: 2px; /* c)letter-spacing: deja separación entre letras */
+    margin: 10px;  /* c) Margenes: Controla al la distancia entre el contenido y su borde */
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine ;
 }
 footer{
     opacity: .6;
+    margin: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
