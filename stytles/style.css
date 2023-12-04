@@ -11,11 +11,35 @@ body{
     align-items: center;
     justify-content: center;
     font-family: agbalumo;
+    /*esto seria la ruta de tu imagen*/
+    background-image: url('/assets/images/art_hipster-wallpaper-1920x1080\ \(1\).jpg');
+    background-repeat: no-repeat; /* Sin esto lo que hace es repetir la imágen si es menor de 800 píxeles */
+    background-position: center center; /* Con estos la centra  */
+    background-attachment: fixed; /* Con estos la centra  */
+    background-size: cover; /* La deja fina fina */
 }
 h1{
     letter-spacing: 2px; /* c)letter-spacing: deja separación entre letras */
     margin: 10px;  /* c) Margenes: Controla la distancia entre el contenido y su borde */
+    padding: 10px;
     text-align: center;
+    background-color: aqua;
+    border-radius: 2em;
+}
+h2{
+    color: rgb(0, 0, 0);
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 15ch;
+    animation: typing 2s steps(15), blink .5s infinite step-end alternate; /* Los steps son el número de caracteres */
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink {
+    50% { border-color: transparent;}
 }
 main{
     display: flex;
@@ -24,12 +48,19 @@ main{
     justify-content: center;
     background-color: aquamarine ;
     width: 50vh;
+    /* Degradiante de color fondo */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.7433761205428686) 0%, rgba(55,153,102,0.9969373741041222) 50%, rgba(24,231,9,0.8430912202579683) 100%);
+    border-radius: 2em;
 }
 footer{
-    opacity: .6;
+    opacity: .8;
     margin: 20px;
+    padding: 10px;
     display:flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    background-color: aqua;
+    border-radius: 2em;
 }
