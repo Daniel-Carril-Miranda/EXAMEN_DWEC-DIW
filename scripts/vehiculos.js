@@ -46,4 +46,28 @@ export class vehiculo {
   set cilindrada(cilindrada) {
     this.#cilindrada = cilindrada;
   }
+  // Creo el método para mostrar datos
+  mostrarDatos() {
+    const datos = `
+    Marca: ${this.#marca}
+    Modelo: ${this.#modelo}
+    Color: ${this.color}
+    Anio: ${this.anio}
+    Cilindrada: ${this.cilindrada}
+    `
+    imprimir(datos);
+  }
+    //   Método acelerar, arrancar y frenar
+    acelerar() {
+        const mensaje = `El vehiculo ha acelerado hasta 120km/h`
+        imprimir(mensaje);
+    }
+    arrancar(){
+        const mensaje = `El vehiculo ha arrancado`
+        imprimir(mensaje);
+    }
+    frenar(){
+        const mensaje = `El vehiculo ha frenado`
+        imprimir(mensaje);
+    }
 }
